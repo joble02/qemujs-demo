@@ -1445,11 +1445,11 @@
         var arch = archElement.value;
         startupElement.style.display = 'none';
         Module['TOTAL_MEMORY'] = (memSizeElement.value|0) * 1024 * 1024;
-        /*for(var key in presets[arch].variants) {
+        for(var key in presets[arch].variants) {
           var newOption = document.createElement("option");
           newOption.text = key;
           presetElement.options.add(newOption);
-        }*/
+        }
         presetChanged();
 
         load_runtime(arch);
